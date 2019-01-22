@@ -19,6 +19,7 @@
             ]"
             class="currency-symbol"
           />
+          <!--<span><currency-icon :icon="selectedCurrency.symbol"></currency-icon></span>-->
           {{ selectedCurrency.symbol }}
           <span class="subname">- {{ selectedCurrency.name }}</span>
         </p>
