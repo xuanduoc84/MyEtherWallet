@@ -98,7 +98,9 @@ export default class BitySwap {
       if (!this.isValidNetwork) return;
       const exitRates = await getExitRates();
       const exitData = exitRates.pairs;
+      console.log('getExitRates', exitData); // todo remove dev item
       const rates = await getRates();
+      console.log('getRates', rates); // todo remove dev item
       const data = rates.objects;
       exitData.forEach(entry => {
         if (entry.enabled) {

@@ -11,6 +11,7 @@ import {
   walletDepositeAddress,
   kyberAddressFallback,
   KyberCurrencies,
+  kyberMethods,
   FEE_RATE
 } from './config';
 import kyberNetworkABI from './kyberNetwork.abi';
@@ -30,6 +31,7 @@ export {
   kyberTokenInfoList,
   kyberValidNetworks,
   kyberNetworkABI,
+  kyberMethods,
   ERC20,
   FEE_RATE
 };

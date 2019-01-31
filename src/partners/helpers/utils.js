@@ -51,7 +51,7 @@ function buildPayload(method, data) {
   return {
     jsonrpc: '2.0',
     method: method,
-    params: data,
+    params: data || [],
     id: uuid()
   };
 }

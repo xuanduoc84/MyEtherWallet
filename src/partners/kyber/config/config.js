@@ -18,6 +18,11 @@ const kyberAddressFallback = {
 import { KyberCurrenciesETH } from './currenciesETH';
 import { KyberCurrenciesROP } from './currenciesROP';
 
+const kyberMethods = {
+  getSupportedTokens: 'getSupportedTokens',
+  getCryptoRates: 'getCryptoRates'
+};
+
 const KyberCurrencies = { ETH: KyberCurrenciesETH, ROP: KyberCurrenciesROP };
 
 const walletDepositeAddress = '0x4247951c2eb6d0bA38d233fe7d542c8c80c9d46A'; // i.e. where payments go
@@ -51,5 +56,6 @@ export {
   kyberNetworkENS,
   walletDepositeAddress,
   KyberCurrencies,
-  kyberAddressFallback
+  kyberAddressFallback,
+  kyberMethods
 };
